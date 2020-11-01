@@ -30,7 +30,7 @@ abstract class Vehicle
         $this->nbSeats = $nbSeats;
     }
 
-    public function forward(): string
+    public function forward()
     {
         $this->currentSpeed;
         return "Go !";
@@ -43,7 +43,6 @@ abstract class Vehicle
             $this->currentSpeed--;
             $sentence .= "Brake !!!";
         }
-
         $sentence .= "I'm stopped !";
         return $sentence;
     }
@@ -56,7 +55,7 @@ abstract class Vehicle
     public function setCurrentSpeed(int $currentSpeed): void
     {
         if($currentSpeed >= 0){
-            $this->currentSpeed = $currentSpeed;
+            $this->currentSpeed = $currentSpeed ;
         }
     }
 
