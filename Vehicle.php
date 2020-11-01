@@ -2,7 +2,7 @@
 
 // Vehicle.php
 
-class Vehicle
+abstract class Vehicle
 {
     /**
      * @var string
@@ -89,4 +89,5 @@ class Vehicle
     {
         $this->nbWheels = $nbWheels;
     }
+
 }
